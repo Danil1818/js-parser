@@ -1,3 +1,5 @@
+const { read } = require("fs")
+
 function sumAll(...all) {
 	return all.reduce((acc, n) => {
 		return acc + n
@@ -52,3 +54,10 @@ delay(2500).then(() => {
 	const num = 40
 	return num
 })
+
+
+function readText(t) {
+	return t.toString()
+}
+
+console.log(readText(123456))
