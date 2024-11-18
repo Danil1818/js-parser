@@ -1,4 +1,4 @@
-const { read } = require("fs")
+const { read } = require('fs')
 
 function sumAll(...all) {
 	return all.reduce((acc, n) => {
@@ -55,9 +55,14 @@ delay(2500).then(() => {
 	return num
 })
 
-
 function readText(t) {
 	return t.toString()
 }
 
 console.log(readText(123456))
+
+const arrNum = [1, 2, 3, 4, 5]
+
+for (num of arrNum) {
+	console.log(num ** 2)
+}
